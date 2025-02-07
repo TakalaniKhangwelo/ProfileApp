@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProfileApp.ProfilePage"
+             Title="ProfilePage">
+
+    <StackLayout Padding="20" BackgroundColor="Pink" >
+        <Label Text="Profile Picture" FontSize="Medium" TextColor="Black" />
+        <Image x:Name="ProfileImage" HeightRequest="100" WidthRequest="100" Aspect="AspectFill" />
+        <Button Text="Pick an Image" Clicked="OnPickImageClicked" BackgroundColor="BlueViolet" FontSize="Medium"/>
+
+        <Label Text="Name"  TextColor="Black" FontSize="Medium"/>
+        <Entry x:Name="NameEntry" TextColor="Black" />
+
+        <Label Text="Surname" TextColor="Black" FontSize="Medium"/>
+        <Entry x:Name="SurnameEntry" TextColor="Black" />
+
+        <Label Text="Email Address"  TextColor="Black" FontSize="Medium"/>
+        <Entry x:Name="EmailEntry" Keyboard="Email" TextColor="Black" />
+
+        <Label Text="Bio" TextColor="Black" FontSize="Medium"/>
+        <Editor x:Name="BioEditor" HeightRequest="100" TextColor="Black"/>
+      
+        <Button Text="Save" Clicked="OnSaveButtonClicked" BackgroundColor="BlueViolet" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage>
